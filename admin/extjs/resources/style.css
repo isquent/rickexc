@@ -1,0 +1,54 @@
+#header { background: #7F99BE url(/images/layout-browser-hd-bg.gif) repeat-x center;}
+#header h1 {font-size: 16px;color: #fff;padding: 3px 10px;margin:0px; font-family:"微软雅黑","黑体"}
+.header h1{margin:0px;}
+.tabs{}
+.tabs{background-image: url(../images/menuPanel/bulletin_manager.gif) !important;}
+.manage{background-image: url(../images/menuPanel/admin.gif) !important;}
+.home{background-image: url(../images/home.gif) !important; line-height:30px;}
+.icon-menu{background-image: url(../images/menuPanel/sys.gif) !important;}
+
+.thumb img{
+	width:200px;
+	height:200px;
+}
+
+.x-grid-row-editor-buttons-default-top{
+	bottom:auto;
+	top:-31px;
+}
+.x-grid-row-editor-buttons-default-bottom{
+	top:auto;
+	bottom:-31px;
+}
+
+.images-view .thumb-wrap span {
+	display: block;
+	overflow: hidden;
+	text-align: center;
+	width: 200px;
+}
+.images-view .thumb {
+	background: 
+	#dddddd;
+	padding: 3px;
+	padding-bottom: 0;
+}
+.images-view .thumb-wrap {
+	float: left;
+	margin: 4px;
+	margin-right: 0;
+	padding: 5px;
+}
+.images-view .x-item-over{
+	border: 1px solid #ddd;
+	background-color:#efefef;
+	padding:4px;
+}
+.images-view .x-item-selected {
+	background: #eff5fb ;
+	border: 1px solid 
+	#99bbe8;padding: 4px;
+}
+.images-view .x-item-selected .thumb {
+	background: transparent;
+}

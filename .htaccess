@@ -1,0 +1,16 @@
+#DocumentRoot "/Users/hobart_tian/Program/website/htdocs/app/lll/"
+AddType video/mp4 .mp4 .m4v
+#AddType application/mp4 .mp4
+<IfModule mod_rewrite.c>
+Options +FollowSymlinks
+#AllowOverride All
+RewriteEngine On
+#RewriteCond $1 !(.*)\.(html|php|htm|png|jpg|gif)$
+RewriteCond %{REQUEST_FILENAME} !-f  
+RewriteCond %{REQUEST_FILENAME} !-d  
+#RewriteBase /app/lll/
+RewriteRule   ^admin/([^/]+)/(.*)$    rest.php?_action=$1&_id=$2  [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f  
+RewriteCond %{REQUEST_FILENAME} !-d  
+RewriteRule   ^admin/([^/]+)$	      rest.php?_action=$1	   [QSA,L]
+</IfModule>

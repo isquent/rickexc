@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無標題文件</title>
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+<style type="text/css">
+body {
+	background-color: #000;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="html5" style="display:none;width:375px;height:300px;">
+	<video style="width:375px;height:300px;" src="http://enleen.w134.mc-test.com//video/enlen.mp4" controls="controls"></video>
+</div>
+<script type="text/javascript">
+var ua = navigator.userAgent;
+var isiPad = /iPad/i.test(ua) || /iPhone OS/i.test(ua) || (/Mac OS X/i.test(ua) && /Safari/i.test(ua));
+if(isiPad){
+	document.getElementById("html5").style.display= "block";
+}else{
+	var swf_width=385;
+	var swf_height=293;
+	var texts='首页宣传片';
+	var files='enlen.flv';
+	var 	config='0:自动播放|1:连续播放|100:默认音量|0:控制栏位置|2:控制栏显示|0x000033:主体颜色|60:主体透明度|0x66ff00:光晕颜色|0xffffff:图标颜色|0xffffff:文字颜色|:logo文字|:logo地址|:结束swf地址';
+	document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+	document.write('<param name="movie" value="vcastr2.swf"><param name="quality" value="high">');
+	document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+	document.write('<param name="FlashVars" value="vcastr_file='+files+'&vcastr_title='+texts+'&vcastr_config='+config+'">');		
+	document.write('<embed src="vcastr2.swf" wmode="opaque" FlashVars="vcastr_file='+files+'&vcastr_title='+texts+'&vcastr_config='+config+'" menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); 	
+	document.write('</object>'); 
+}
+</script>
+</body>
+</html>
